@@ -114,6 +114,11 @@ We have successfully gained access to the target server.
 
 <img width="1717" height="619" alt="Screenshot 2026-06-29 094548" src="https://github.com/user-attachments/assets/b02b0eec-8d57-48fa-8eb8-6ac768178187" />
 
+We can also use **Burp Suite**
+
+<img width="1280" height="536" alt="photo_2026-05-09_11-07-29" src="https://github.com/user-attachments/assets/5b2d0837-913c-4bfc-b8be-4d8c93cf2a35" />
+
+
 
 
 
