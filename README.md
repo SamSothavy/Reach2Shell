@@ -2,22 +2,28 @@
 
 ## Objective
 
-The main objective of this lab is to identify publicly available exploits for discovered vulnerabilities and evaluate their potential impact on targeted systems.
+The objective of this lab is to identify and exploit a vulnerable web application to achieve Remote Code Execution (RCE). The assessment demonstrates the complete penetration testing process, including reconnaissance, vulnerability validation, exploitation, and post-exploitation verification in a controlled lab environment.
 
-### Skills Learned
+## Skills Learned
 
-- Identify publicly available exploits for known vulnerabilities (CVE-based research).
-- Use exploit databases to search for relevant security exploits.
-- Analyze exploit descriptions to understand attack methods and requirements.
-- Match vulnerabilities with possible exploit techniques.
-- Assess exploit risk and potential system impact.
-- Determine exploit feasibility in real-world scenarios.
-- Understand how attackers may leverage known vulnerabilities.
-- Support vulnerability assessment with exploit validation research.
-  
-### Tools Used
+- Web application reconnaissance and enumeration
+- Identifying web application vulnerabilities
+- Remote Code Execution (RCE) exploitation
+- Authentication bypass techniques (where applicable)
+- Exploit research and validation
+- Executing public proof-of-concept (PoC) exploits
+- Session and cookie manipulation
+- Command execution on a compromised target
+- Verifying successful exploitation
+- Documenting security findings and impact
 
-- Exploit-DB
-- SearchSploit
+## Tools Used
+
+- Nmap
+- Burp Suite
+- Firefox/Chrome Developer Tools
+- Python
+- Public Proof-of-Concept (PoC) exploit
+- Linux Terminal (Kali Linux)
   
 ## Steps
