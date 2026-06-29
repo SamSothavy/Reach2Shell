@@ -54,4 +54,68 @@ The target web application is running Next.js version 16.0.6. Based on vulnerabi
 
 <img width="1714" height="923" alt="Screenshot 2026-06-29 084451" src="https://github.com/user-attachments/assets/b95d68ae-98e5-423e-8b99-b6112aacc42f" />
 
+Next, clone the scanner repository from GitHub using the following command:
+
+```bash
+git clone https://github.com/SamSothavy/customized_exploit.git
+```
+
+<img width="1710" height="905" alt="Screenshot 2026-06-29 085609" src="https://github.com/user-attachments/assets/54d79721-77c0-4019-9fc9-e31aee0b0f54" />
+
+The exploit is executed using Python, specifying the target URL and a command parameter to confirm remote command execution:
+
+<img width="1710" height="846" alt="Screenshot 2026-06-29 090731" src="https://github.com/user-attachments/assets/57e5cb89-9473-4291-8d24-2ee9ac2dc209" />
+
+There are two methods available to compromise the target server:
+
+1. **Raw Execution** – Directly execute commands on the target system.
+2. **Download with Auto-Execution** – Download a payload to the target system and execute it automatically.
+
+Both methods can be used depending on the lab scenario and exploitation approach.
+
+<img width="1280" height="746" alt="photo_2026-05-09_11-19-43" src="https://github.com/user-attachments/assets/5993e6ff-1108-42b9-a97f-7f9dc8c4667d" />
+
+**Raw Execution**
+
+Port 4444 is opened to listen for incoming connections from the target system.
+
+<img width="1710" height="439" alt="Screenshot 2026-06-29 091611" src="https://github.com/user-attachments/assets/95cd84b1-772d-49f5-827b-c0fe9ef05899" />
+
+Then, we use a reverse shell script
+
+<img width="1710" height="862" alt="Screenshot 2026-06-29 091801" src="https://github.com/user-attachments/assets/411e9270-8768-4ccb-bf65-45a09a64ea67" />
+
+Failed attempt
+
+<img width="1710" height="530" alt="Screenshot 2026-06-29 092136" src="https://github.com/user-attachments/assets/91efeefc-3427-43c5-94d1-9449f04d9c12" />
+
+Encoded not working
+
+<img width="1712" height="501" alt="Screenshot 2026-06-29 092311" src="https://github.com/user-attachments/assets/61f1b254-5a31-4fd5-8303-e33fb773273c" />
+
+The Raw Execution method was unsuccessful in this scenario.
+
+ **Download with Auto-Execution**
+ 
+We create a `.sh` file that contains a reverse shell script.
+
+<img width="1709" height="497" alt="Screenshot 2026-06-29 092800" src="https://github.com/user-attachments/assets/3bd4a148-0719-4f89-956d-71080e41b452" />
+
+Then, hosting it
+
+<img width="1715" height="499" alt="Screenshot 2026-06-29 093745" src="https://github.com/user-attachments/assets/c607e5ed-1ab1-4131-a2b3-fcaf0fbdbe9f" />
+
+
+<img width="1714" height="499" alt="Screenshot 2026-06-29 093403" src="https://github.com/user-attachments/assets/0b808de2-8838-4cd4-82f0-f1836a9399b3" />
+
+<img width="1713" height="766" alt="Screenshot 2026-06-29 094449" src="https://github.com/user-attachments/assets/ac7acc00-5bb8-4d14-a640-254a3195655a" />
+
+We have successfully gained access to the target server.
+
+<img width="1717" height="619" alt="Screenshot 2026-06-29 094548" src="https://github.com/user-attachments/assets/b02b0eec-8d57-48fa-8eb8-6ac768178187" />
+
+
+
+
+ 
 
